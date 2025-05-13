@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-    --dark-blue: #0b1736;
-    --light-blue: #1a3a8f;
-    --accent-color: #4d79ff;
-    --text-color: #ffffff;
-    --secondary-text: #b3c6ff;
+    --dark-blue: #0B132B;
+    --light-blue: #1C2541;
+    --accent-color: #3A86FF;
+    --text-color: #F5F7FA;
+    --secondary-text: #A3BFFA;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, var(--dark-blue), var(--light-blue));
+    background: transparent;
     color: var(--text-color);
     min-height: 100vh;
     overflow-x: hidden;
@@ -57,7 +57,7 @@ body {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background-color: rgba(11, 23, 54, 0.8);
+    background-color: rgba(11, 19, 43, 0.8);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -111,23 +111,22 @@ body {
 
 .container {
     width: 100%;
-    padding: 0 5%;
     margin: 0 auto;
-    padding-top: 100px;
 }
 
 section {
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 0;
 }
 
 /* HOME SECTION */
 .home {
     position: relative;
     overflow: hidden;
+    background: linear-gradient(to right, #081C3A, #FFFFFF);
 }
 
 .home-content {
@@ -136,6 +135,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 0 5%;
 }
 
 .home-text {
@@ -214,7 +214,7 @@ section {
 }
 
 .cta-btn:hover {
-    background-color: #3963e0;
+    background-color: #2A6CD6;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -233,7 +233,7 @@ section {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--accent-color);
-    box-shadow: 0 0 30px rgba(77, 121, 255, 0.5);
+    box-shadow: 0 0 30px rgba(58, 134, 255, 0.5);
     animation: float 6s ease-in-out infinite;
     position: relative;
     z-index: 2;
@@ -304,11 +304,16 @@ section {
 }
 
 /* ABOUT SECTION */
+.about {
+    background: linear-gradient(to right, #081C3A, #FFFFFF);
+}
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     align-items: flex-start;
+    padding: 0 5%;
 }
 
 .about-text {
@@ -374,13 +379,17 @@ section {
     top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(90deg, var(--accent-color), #7f9fff);
+    background: linear-gradient(90deg, var(--accent-color), #6FA8FF);
     border-radius: 10px;
     width: 0;
     transition: width 1.5s ease-in-out;
 }
 
 /* EXPERIENCE SECTION */
+.experience {
+    background: linear-gradient(to right, #081C3A, #FFFFFF);
+}
+
 .experience h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -494,7 +503,7 @@ section {
 
 /* CONTACT SECTION */
 .contact {
-    position: relative;
+    background: linear-gradient(to right, #081C3A, #FFFFFF);
 }
 
 .contact h2 {
@@ -520,6 +529,7 @@ section {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 3rem;
+    padding: 0 5%;
 }
 
 .contact-info {
@@ -576,7 +586,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 10px rgba(77, 121, 255, 0.3);
+    box-shadow: 0 0 10px rgba(58, 134, 255, 0.3);
 }
 
 .form-group textarea {
@@ -599,17 +609,16 @@ section {
 }
 
 .submit-btn:hover {
-    background-color: #3963e0;
+    background-color: #2A6CD6;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* FOOTER */
 footer {
-    background-color: rgba(7, 15, 36, 0.8);
+    background: linear-gradient(to right, #081C3A, #FFFFFF);
     padding: 2rem 5%;
     text-align: center;
-    margin-top: 2rem;
 }
 
 footer p {
@@ -626,7 +635,7 @@ footer p {
         position: absolute;
         right: 0;
         top: 70px;
-        background-color: rgba(11, 23, 54, 0.95);
+        background-color: rgba(11, 19, 43, 0.95);
         flex-direction: column;
         width: 100%;
         text-align: center;
