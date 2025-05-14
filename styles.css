@@ -376,6 +376,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    border: 0.5px solid var(--light-blue);
 }
 
 .skill-progress {
@@ -387,7 +388,6 @@ section {
     border-radius: 10px;
     width: 0;
     animation: load-progress 1.5s ease-in-out forwards;
-    border: 0.5px solid var(--light-blue);
 }
 
 @keyframes load-progress {
