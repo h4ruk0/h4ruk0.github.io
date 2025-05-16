@@ -126,7 +126,7 @@ section {
 .home {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #081C3A 0%, #081C3A 40%, #FFFFFF 100%);
+    background: linear-gradient(to right, rgb(10, 32, 70) 20%, rgb(12, 16, 68) 35%, rgb(6, 2, 31) 60%);
 }
 
 .home-content {
@@ -211,11 +211,12 @@ section {
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    transform: translateY(20px);
 }
 
 .cta-btn:hover {
     background-color: #2A6CD6;
-    transform: translateY(-3px);
+    transform: translateY(-0.5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -289,23 +290,33 @@ section {
 .social-icons {
     display: flex;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .social-icons a {
     color: var(--text-color);
     font-size: 1.5rem;
     transition: all 0.3s ease;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+ said:
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .social-icons a:hover {
     color: var(--accent-color);
+    border-color: var(--accent-color);
     transform: translateY(-6px);
 }
 
 /* ABOUT SECTION */
 .about {
-    background: linear-gradient(to right, #081C3A 0%, #081C3A 40%, #FFFFFF 100%);
+    background: linear-gradient(to right, rgb(10, 32, 70) 20%, rgb(12, 16, 68) 35%, rgb(6, 2, 31) 60%);
 }
 
 .about-content {
@@ -366,7 +377,7 @@ section {
 }
 
 .skill-name span:nth-child(2) {
-    color: var(--dark-blue);
+    color: var(--white);
 }
 
 .skill-bar {
@@ -376,7 +387,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    border: 0.5px solid var(--light-blue);
+    border: 0.2px solid var(--light-blue);
 }
 
 .skill-progress {
@@ -397,7 +408,7 @@ section {
 
 /* EXPERIENCE SECTION */
 .experience {
-    background: linear-gradient(to right, #081C3A 0%, #081C3A 40%, #FFFFFF 100%);
+    background: linear-gradient(to right, rgb(10, 32, 70) 20%, rgb(12, 16, 68) 35%, rgb(6, 2, 31) 60%);
 }
 
 .experience h2 {
@@ -428,7 +439,7 @@ section {
     content: '';
     position: absolute;
     width: 2px;
-    height: 665px;
+    height: 435px;
     background-color: rgba(255, 255, 255, 0.2);
     top: 0;
     bottom: 0;
@@ -517,7 +528,7 @@ section {
 
 /* CONTACT SECTION */
 .contact {
-    background: linear-gradient(to right, #081C3A 0%, #081C3A 40%, #FFFFFF 100%);
+    background: linear-gradient(to right, rgb(10, 32, 70) 20%, rgb(12, 16, 68) 35%, rgb(6, 2, 31) 60%);
 }
 
 .contact h2 {
@@ -630,7 +641,7 @@ section {
 
 /* FOOTER */
 footer {
-    background: linear-gradient(to right, #081C3A 0%, #081C3A 40%, #FFFFFF 100%);
+    background: linear-gradient(to right, rgb(10, 32, 70) 20%, rgb(12, 16, 68) 35%, rgb(6, 2, 31) 60%);
     padding: 2rem 5%;
     text-align: center;
 }
