@@ -697,47 +697,46 @@ img {
 }
 
 .skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 70%;
-}
-
-.skills__js {
   width: 60%;
 }
 
-.skills__react {
+.skills__css {
+  width: 60%;
+}
+
+.skills__js {
   width: 40%;
 }
 
+.skills__react {
+  width: 30%;
+}
 .skills__php {
-  width: 90%;
+  width: 30%;
 }
 
 .skills__mysql {
-  width: 72%;
+  width: 30%;
 }
 
 .skills__node {
-  width: 58%;
+  width: 30%;
 }
 
 .skills__python {
-  width: 94%;
-}
-
-.skills__blender {
   width: 50%;
 }
 
+.skills__blender {
+  width: 60%;
+}
+
 .skills__photoshop {
-  width: 42%;
+  width: 35%;
 }
 
 .skills__adobeillustrator {
-  width: 62%;
+  width: 35%;
 }
 
 .skills__close .skills__list {
