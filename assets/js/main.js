@@ -142,7 +142,6 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -156,11 +155,15 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-// We validate if the user previously chose a topic
+// MODIFICATION 1: Set dark theme as default if no previous selection exists
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+} else {
+  // MODIFICATION 2: Default to dark theme when no previous selection
+  document.body.classList.add(darkTheme)
+  themeButton.classList.add(iconTheme) // This shows sun icon (indicating light theme can be activated)
 }
 
 // Activate / deactivate the theme manually with the button
