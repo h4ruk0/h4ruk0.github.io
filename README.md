@@ -1,4 +1,4 @@
-> ## Haruko's Responsive Portfolio Website 
+> ## Responsive Portfolio Website Mrinmoy
 
 
 - Responsive Personal Portfolio Website Using HTML CSS & JavaScript
